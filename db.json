@@ -1,0 +1,214 @@
+{
+  "users": [
+    {
+      "id": "u_demo",
+      "name": "Utilizador Demo",
+      "phone": "923000000",
+      "email": "demo@kambamarket.ao",
+      "role": "user",
+      "verified": true,
+      "createdAt": "2026-09-08T08:00:00.000Z",
+      "passwordHash": "439f011e86358721adac2e414fca4f26529f649b6f9c7ad0b79ce88fba6b79a745b92cf93b6039dce3f7450306a7865f7a1556612ddc59a7a477c6d85673309a",
+      "salt": "b69748f2f8da8a16aa820a0f4f3eeeae"
+    },
+    {
+      "id": "u_admin",
+      "name": "Administrador",
+      "phone": "922000000",
+      "email": "admin@kambamarket.ao",
+      "role": "admin",
+      "verified": true,
+      "createdAt": "2026-09-08T08:00:00.000Z",
+      "passwordHash": "446c225dd6932a14e2b8741fe9210ae5a19923fe457638f3f55d0202247865e600cab219376f48db6038dfa126ffa803b444b9c05866c34cda3c0a312b340a3a",
+      "salt": "23fac2ae4a76c285c8d440c9079e6c92"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_phone",
+      "name": "Telemóveis",
+      "icon": "📱"
+    },
+    {
+      "id": "cat_pc",
+      "name": "Informática",
+      "icon": "💻"
+    },
+    {
+      "id": "cat_auto",
+      "name": "Automóveis",
+      "icon": "🚗"
+    },
+    {
+      "id": "cat_home",
+      "name": "Casa",
+      "icon": "🏠"
+    },
+    {
+      "id": "cat_fashion",
+      "name": "Moda",
+      "icon": "👕"
+    },
+    {
+      "id": "cat_beauty",
+      "name": "Beleza",
+      "icon": "💄"
+    },
+    {
+      "id": "cat_services",
+      "name": "Serviços",
+      "icon": "🧰"
+    },
+    {
+      "id": "cat_other",
+      "name": "Outros",
+      "icon": "🛒"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "sellerId": "u_demo",
+      "title": "iPhone 13 128GB",
+      "description": "Excelente estado, desbloqueado e pronto para uso.",
+      "price": 650000,
+      "categoryId": "cat_phone",
+      "location": "Luanda",
+      "condition": "Usado",
+      "phone": "923000000",
+      "image": "https://images.unsplash.com/photo-1592286927505-2fdc10f90c76?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "status": "approved",
+      "createdAt": "2026-09-07T10:00:00.000Z",
+      "affiliateEnabled": true,
+      "affiliateCommissionRate": 0.05
+    },
+    {
+      "id": "p2",
+      "sellerId": "u_demo",
+      "title": "Laptop Lenovo ThinkPad",
+      "description": "Laptop para trabalho e estudo, com SSD e excelente desempenho.",
+      "price": 420000,
+      "categoryId": "cat_pc",
+      "location": "Viana",
+      "condition": "Usado",
+      "phone": "923000000",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "status": "approved",
+      "createdAt": "2026-09-06T10:00:00.000Z",
+      "affiliateEnabled": true,
+      "affiliateCommissionRate": 0.05
+    },
+    {
+      "id": "p3",
+      "sellerId": "u_demo",
+      "title": "Sofá 3 lugares",
+      "description": "Sofá confortável em bom estado. Entrega negociável.",
+      "price": 180000,
+      "categoryId": "cat_home",
+      "location": "Talatona",
+      "condition": "Usado",
+      "phone": "923000000",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "status": "approved",
+      "createdAt": "2026-09-05T10:00:00.000Z",
+      "affiliateEnabled": true,
+      "affiliateCommissionRate": 0.05
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "providerId": "u_demo",
+      "title": "Instalação eléctrica residencial",
+      "description": "Instalação e reparação eléctrica para residências e pequenos negócios.",
+      "priceFrom": 15000,
+      "category": "Eletricista",
+      "location": "Luanda",
+      "phone": "923000000",
+      "featured": true,
+      "status": "approved",
+      "createdAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "s2",
+      "providerId": "u_demo",
+      "title": "Design gráfico para negócios",
+      "description": "Logotipos, flyers, posts e identidade visual.",
+      "priceFrom": 20000,
+      "category": "Design",
+      "location": "Luanda",
+      "phone": "923000000",
+      "featured": false,
+      "status": "approved",
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    }
+  ],
+  "favorites": [],
+  "reports": [],
+  "subscriptions": [],
+  "orders": [],
+  "plans": [
+    {
+      "id": "free",
+      "name": "Gratuito",
+      "price": 0,
+      "features": [
+        "Publicar anúncios",
+        "Perfil básico",
+        "Receber contactos"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 7000,
+      "features": [
+        "Até 30 anúncios",
+        "Destaques",
+        "Estatísticas",
+        "Perfil profissional"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "price": 15000,
+      "features": [
+        "Até 100 anúncios",
+        "Maior exposição",
+        "Destaque prioritário",
+        "Estatísticas avançadas"
+      ]
+    }
+  ],
+  "messages": [],
+  "notifications": [
+    {
+      "id": "n_85bffabff23ef4d8",
+      "userId": "u_admin",
+      "type": "message",
+      "title": "Nova mensagem",
+      "message": "Utilizador Demo enviou uma mensagem.",
+      "read": false,
+      "createdAt": "2026-09-08T08:56:58.982Z"
+    },
+    {
+      "id": "n_299fa05a727569f8",
+      "userId": "u_demo",
+      "type": "order",
+      "title": "Nova intenção de compra",
+      "message": "Pedido ord_fc3262121afec69e para iPhone 13 128GB.",
+      "read": false,
+      "createdAt": "2026-09-08T08:57:08.225Z"
+    }
+  ],
+  "payments": [],
+  "affiliates": [],
+  "affiliateLinks": [],
+  "withdrawals": [],
+  "uploads": [],
+  "pushSubscriptions": []
+}
