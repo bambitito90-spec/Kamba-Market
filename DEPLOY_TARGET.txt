@@ -1,0 +1,3 @@
+Kamba Market 4.0
+Deploy alvo: GitHub Free + Cloudflare Pages (frontend) + Render (backend)
+Sem VPS e sem Oracle.

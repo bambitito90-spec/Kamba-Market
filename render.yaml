@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kamba-market-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_TTL_MS
+        value: "604800000"
+      - key: PAYMENT_PROVIDER
+        value: mock

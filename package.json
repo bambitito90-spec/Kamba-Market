@@ -1,0 +1,15 @@
+{
+  "name": "kamba-market",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Kamba Market — marketplace angolano de produtos, serviços e afiliados, preparado para produção.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate:pg": "node scripts/migrate-json-to-postgres.js",
+    "test": "node tests/smoke.js",
+    "security:check": "node scripts/security-check.js"
+  },
+  "engines": {"node": ">=18"},
+  "dependencies": {"pg": "^8.16.3"}
+}
